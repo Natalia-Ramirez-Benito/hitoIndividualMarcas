@@ -1,0 +1,2052 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE pedidos [
+  <!ELEMENT pedidos (year*)>
+  <!ELEMENT year (trimestre*)>
+  <!ATTLIST year y CDATA #REQUIRED>
+  <!ELEMENT trimestre (cliente*)>
+  <!ATTLIST trimestre t CDATA #REQUIRED>
+  <!ELEMENT cliente (nombre, apellidos, tlf, direccion, correo, fecha_inclusion, detalles_pedido)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT apellidos (#PCDATA)>
+  <!ELEMENT tlf (#PCDATA)>
+  <!ELEMENT direccion (calle, ciudad, cp, provincia)>
+  <!ELEMENT calle (#PCDATA)>
+  <!ELEMENT ciudad (#PCDATA)>
+  <!ELEMENT cp (#PCDATA)>
+  <!ELEMENT provincia (#PCDATA)>
+  <!ELEMENT correo (#PCDATA)>
+  <!ELEMENT fecha_inclusion (#PCDATA)>
+  <!ELEMENT detalles_pedido (id_pedido, fecha_compra, fecha_entrega, total_factura, items)>
+  <!ELEMENT id_pedido (#PCDATA)>
+  <!ELEMENT fecha_compra (#PCDATA)>
+  <!ELEMENT fecha_entrega (#PCDATA)>
+  <!ELEMENT total_factura (#PCDATA)>
+  <!ELEMENT items (nombre, referencia, precio, unidades)>
+  <!ELEMENT referencia (#PCDATA)>
+  <!ELEMENT precio (#PCDATA)>
+  <!ELEMENT unidades (#PCDATA)>
+]>
+
+<pedidos>
+    <year y="2021">
+        <trimestre t ="1">
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>01</id_pedido>
+                    <fecha_compra>05/01/2021</fecha_compra>
+                    <fecha_entrega>09/01/2021</fecha_entrega>
+                    <total_factura>229,98€</total_factura>
+                    <items>
+                        <nombre>Nilait Prisma 40FA5001S 40" LED FullHD Smart TV</nombre>
+                        <referencia>10464961</referencia>
+                        <precio>229,98€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>02</id_pedido>
+                    <fecha_compra>12/01/2021</fecha_compra>
+                    <fecha_entrega>18/01/2021</fecha_entrega>
+                    <total_factura>425,99€</total_factura>
+                    <items>
+                        <nombre>Samsung HW-Q700B Barra de Sonido 3.1.2 Canales 320W Negra</nombre>
+                        <referencia>10647263</referencia>
+                        <precio>425,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>03</id_pedido>
+                    <fecha_compra>20/01/2021</fecha_compra>
+                    <fecha_entrega>25/01/2021</fecha_entrega>
+                    <total_factura>331,96€</total_factura>
+                    <items>
+                        <nombre>Kingston XS2000 Portable SSD 500GB USB 3.2</nombre>
+                        <referencia>571836</referencia>
+                        <precio>82,99€</precio>
+                        <unidades>4</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gay</nombre>
+                <apellidos>Jeffels</apellidos>
+                <tlf>336-486-7487</tlf>
+                <direccion>
+                    <calle>241 Moland Pass</calle>
+                    <ciudad>Greensboro</ciudad>
+                    <cp>27425</cp>
+                    <provincia>North Carolina</provincia>
+                </direccion>
+                <correo>maeillanes@hotmail.com</correo>
+                <fecha_inclusion>22/11/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>04</id_pedido>
+                    <fecha_compra>02/02/2021</fecha_compra>
+                    <fecha_entrega>10/02/2021</fecha_entrega>
+                    <total_factura>259€</total_factura>
+                    <items>
+                        <nombre>Samsung Galaxy Watch4 4G 44mm Plata</nombre>
+                        <referencia>478835</referencia>
+                        <precio>259€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gay</nombre>
+                <apellidos>Jeffels</apellidos>
+                <tlf>336-486-7487</tlf>
+                <direccion>
+                    <calle>241 Moland Pass</calle>
+                    <ciudad>Greensboro</ciudad>
+                    <cp>27425</cp>
+                    <provincia>North Carolina</provincia>
+                </direccion>
+                <correo>maeillanes@hotmail.com</correo>
+                <fecha_inclusion>22/11/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>05</id_pedido>
+                    <fecha_compra>18/02/2021</fecha_compra>
+                    <fecha_entrega>22/02/2021</fecha_entrega>
+                    <total_factura>1019€</total_factura>
+                    <items>
+                        <nombre>Samsung Galaxy S23 256GB Verde Libre + Cargador 25W</nombre>
+                        <referencia>10661574</referencia>
+                        <precio>1019€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Lewes</nombre>
+                <apellidos>Whittick</apellidos>
+                <tlf>615-457-8338</tlf>
+                <direccion>
+                    <calle>1 Hagan Alley</calle>
+                    <ciudad>Nashville</ciudad>
+                    <cp>37220</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>lwhittickg@hotmail.com</correo>
+                <fecha_inclusion>10/01/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>06</id_pedido>
+                    <fecha_compra>24/02/2021</fecha_compra>
+                    <fecha_entrega>28/02/2021</fecha_entrega>
+                    <total_factura>721,99€</total_factura>
+                    <items>
+                        <nombre>Candy CCVB 60D/1 DiVino Vinoteca 38 Botellas</nombre>
+                        <referencia>587072</referencia>
+                        <precio>721,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Frasco</nombre>
+                <apellidos>De Michetti</apellidos>
+                <tlf>508-758-6056</tlf>
+                <direccion>
+                    <calle>00 Dapin Trail</calle>
+                    <ciudad>Brockton</ciudad>
+                    <cp>2305</cp>
+                    <provincia>Massachusetts</provincia>
+                </direccion>
+                <correo>fdemichettih@gmail.com</correo>
+                <fecha_inclusion>20/01/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>07</id_pedido>
+                    <fecha_compra>27/02/2021</fecha_compra>
+                    <fecha_entrega>01/03/2021</fecha_entrega>
+                    <total_factura>91,98€</total_factura>
+                    <items>
+                        <nombre>MSI Vigor GK50 Low Profile TKL Teclado Gaming Negro</nombre>
+                        <referencia>10026475</referencia>
+                        <precio>91,98€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Maud</nombre>
+                <apellidos>Lively</apellidos>
+                <tlf>231-953-2541</tlf>
+                <direccion>
+                    <calle>85797 Rieder Alley</calle>
+                    <ciudad>Muskegon</ciudad>
+                    <cp>49444</cp>
+                    <provincia>Michigan</provincia>
+                </direccion>
+                <correo>mlivelyi@yahoo.es</correo>
+                <fecha_inclusion>24/02/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>08</id_pedido>
+                    <fecha_compra>01/03/2021</fecha_compra>
+                    <fecha_entrega>05/03/2021</fecha_entrega>
+                    <total_factura>962,36€</total_factura>
+                    <items>
+                        <nombre>Canon EOS 2000D 24.1MP WiFi + EF-S 18-55mm F3.5-5.6 IS III</nombre>
+                        <referencia>260062</referencia>
+                        <precio>481,18€</precio>
+                        <unidades>2</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Clarice</nombre>
+                <apellidos>Austins</apellidos>
+                <tlf>602-320-8648</tlf>
+                <direccion>
+                    <calle>933 Lunder Road</calle>
+                    <ciudad>Phoenix</ciudad>
+                    <cp>85030</cp>
+                    <provincia>Arizona</provincia>
+                </direccion>
+                <correo>caustinsj@gmail.com</correo>
+                <fecha_inclusion>24/02/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>09</id_pedido>
+                    <fecha_compra>01/03/2021</fecha_compra>
+                    <fecha_entrega>05/03/2021</fecha_entrega>
+                    <total_factura>206,97€</total_factura>
+                    <items>
+                        <nombre>Corsair Vengeance RGB Pro DDR4 3200 PC4-25600 16GB 2x8GB CL16</nombre>
+                        <referencia>164467</referencia>
+                        <precio>68,99€</precio>
+                        <unidades>3</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Georgie</nombre>
+                <apellidos>Mapples</apellidos>
+                <tlf>402-950-5930</tlf>
+                <direccion>
+                    <calle>0 Doe Crossing Hill</calle>
+                    <ciudad>Omaha</ciudad>
+                    <cp>68179</cp>
+                    <provincia>Nebraska</provincia>
+                </direccion>
+                <correo>gmapplesk@gmail.com</correo>
+                <fecha_inclusion>28/02/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>10</id_pedido>
+                    <fecha_compra>10/03/2021</fecha_compra>
+                    <fecha_entrega>17/03/2021</fecha_entrega>
+                    <total_factura>99,5€</total_factura>
+                    <items>
+                        <nombre>Unotec Hub 7x USB 2.0 Negro</nombre>
+                        <referencia>89706</referencia>
+                        <precio>9,95€</precio>
+                        <unidades>10</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+        </trimestre>
+        <trimestre t="2">
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>11</id_pedido>
+                    <fecha_compra>05/04/2021</fecha_compra>
+                    <fecha_entrega>10/04/2021</fecha_entrega>
+                    <total_factura>82,98€</total_factura>
+                    <items>
+                        <nombre>Canon PIXMA TS705a Impresora Color WiFi Dúplex</nombre>
+                        <referencia>10430155</referencia>
+                        <precio>82,98€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>12</id_pedido>
+                    <fecha_compra>12/04/2021</fecha_compra>
+                    <fecha_entrega>18/04/2021</fecha_entrega>
+                    <total_factura>94,94€</total_factura>
+                    <items>
+                        <nombre>TP-Link Deco M4 Sistema WiFi Mesh AC1200 Dual Band Gigabit Pack 2</nombre>
+                        <referencia>196765</referencia>
+                        <precio>94,94€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>13</id_pedido>
+                    <fecha_compra>15/24/2021</fecha_compra>
+                    <fecha_entrega>20/04/2021</fecha_entrega>
+                    <total_factura>125,34€</total_factura>
+                    <items>
+                        <nombre>HP Laserjet M110w Impresora Láser Monocromo WiFi</nombre>
+                        <referencia>10108280</referencia>
+                        <precio>125,34€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gay</nombre>
+                <apellidos>Jeffels</apellidos>
+                <tlf>336-486-7487</tlf>
+                <direccion>
+                    <calle>241 Moland Pass</calle>
+                    <ciudad>Greensboro</ciudad>
+                    <cp>27425</cp>
+                    <provincia>North Carolina</provincia>
+                </direccion>
+                <correo>maeillanes@hotmail.com</correo>
+                <fecha_inclusion>22/11/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>14</id_pedido>
+                    <fecha_compra>20/04/2021</fecha_compra>
+                    <fecha_entrega>25/04/2021</fecha_entrega>
+                    <total_factura>969€</total_factura>
+                    <items>
+                        <nombre>HP Victus 16-d1033ns Intel Core i7-12700H/16GB/512GB SSD/RTX 3060/16.1''</nombre>
+                        <referencia>10370447</referencia>
+                        <precio>969€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gay</nombre>
+                <apellidos>Jeffels</apellidos>
+                <tlf>336-486-7487</tlf>
+                <direccion>
+                    <calle>241 Moland Pass</calle>
+                    <ciudad>Greensboro</ciudad>
+                    <cp>27425</cp>
+                    <provincia>North Carolina</provincia>
+                </direccion>
+                <correo>maeillanes@hotmail.com</correo>
+                <fecha_inclusion>22/11/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>15</id_pedido>
+                    <fecha_compra>24/04/2021</fecha_compra>
+                    <fecha_entrega>29/04/2021</fecha_entrega>
+                    <total_factura>3099€</total_factura>
+                    <items>
+                        <nombre>LG OLED77C24LA 77" OLED 4K HDR10 Pro</nombre>
+                        <referencia>10241193</referencia>
+                        <precio>3099€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Raynell</nombre>
+                <apellidos>Sanzio</apellidos>
+                <tlf>408-958-8065</tlf>
+                <direccion>
+                    <calle>41 Fulton Pass</calle>
+                    <ciudad>Sunnyvale</ciudad>
+                    <cp>94089</cp>
+                    <provincia>California</provincia>
+                </direccion>
+                <correo>rsanziol@yahoo.es</correo>
+                <fecha_inclusion>24/04/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>16</id_pedido>
+                    <fecha_compra>29/04/2021</fecha_compra>
+                    <fecha_entrega>03/05/2021</fecha_entrega>
+                    <total_factura>222,24€</total_factura>
+                    <items>
+                        <nombre>Huawei MatePad T 10s 10.1" 3/64GB Wifi Azul</nombre>
+                        <referencia>317822</referencia>
+                        <precio>222,24€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Sharon</nombre>
+                <apellidos>Hylton</apellidos>
+                <tlf>602-538-0817</tlf>
+                <direccion>
+                    <calle>1134 Morrow Center</calle>
+                    <ciudad>Phoenix</ciudad>
+                    <cp>85083</cp>
+                    <provincia>Arizona</provincia>
+                </direccion>
+                <correo>shyltonm@gmail.com</correo>
+                <fecha_inclusion>01/04/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>17</id_pedido>
+                    <fecha_compra>02/05/2021</fecha_compra>
+                    <fecha_entrega>08/04/2021</fecha_entrega>
+                    <total_factura>1.830€</total_factura>
+                    <items>
+                        <nombre>Optoma UHD35x Proyector DLP 3D UltraHD 4K 3.600 Lúmenes</nombre>
+                        <referencia>10622235</referencia>
+                        <precio>915€</precio>
+                        <unidades>2</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Sydney</nombre>
+                <apellidos>Heditch</apellidos>
+                <tlf>734-554-4189</tlf>
+                <direccion>
+                    <calle>601 Nelson Lane</calle>
+                    <ciudad>Detroit</ciudad>
+                    <cp>48258</cp>
+                    <provincia>Michigan</provincia>
+                </direccion>
+                <correo>sheditchn@gmail.com</correo>
+                <fecha_inclusion>04/04/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>18</id_pedido>
+                    <fecha_compra>12/04/2021</fecha_compra>
+                    <fecha_entrega>18/04/2021</fecha_entrega>
+                    <total_factura>999€</total_factura>
+                    <items>
+                        <nombre>Acer Predator Triton 300 PT315-53-74QS Intel Core i7-11800H/16GB/1TB SSD/RTX 3050Ti/15.6"</nombre>
+                        <referencia>10649520</referencia>
+                        <precio>999€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Xylia</nombre>
+                <apellidos>Eton</apellidos>
+                <tlf>630-640-5019</tlf>
+                <direccion>
+                    <calle>82531 Mitchell Park</calle>
+                    <ciudad>Chicago</ciudad>
+                    <cp>60604</cp>
+                    <provincia>Illinois</provincia>
+                </direccion>
+                <correo>xetono@naver.com</correo>
+                <fecha_inclusion>08/04/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>19</id_pedido>
+                    <fecha_compra>20/04/2021</fecha_compra>
+                    <fecha_entrega>28/04/2021</fecha_entrega>
+                    <total_factura>445,86€</total_factura>
+                    <items>
+                        <nombre>Canon Objetivo EF 50mm f/1.8 STM</nombre>
+                        <referencia>83207</referencia>
+                        <precio>148,62€</precio>
+                        <unidades>3</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Neysa</nombre>
+                <apellidos>Raw</apellidos>
+                <tlf>339-467-7704</tlf>
+                <direccion>
+                    <calle>0 Vermont Lane</calle>
+                    <ciudad>Woburn</ciudad>
+                    <cp>1813</cp>
+                    <provincia>Massachusetts</provincia>
+                </direccion>
+                <correo>nrawp@gmail.com</correo>
+                <fecha_inclusion>10/04/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>20</id_pedido>
+                    <fecha_compra>10/05/2021</fecha_compra>
+                    <fecha_entrega>20/05/2021</fecha_entrega>
+                    <total_factura>227,96€</total_factura>
+                    <items>
+                        <nombre>Kingston FURY Beast RGB DDR4 3200 MHz 16GB 2x8GB CL16</nombre>
+                        <referencia>432765</referencia>
+                        <precio>56,99€</precio>
+                        <unidades>4</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+        </trimestre>
+        <trimestre t="3">
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>21</id_pedido>
+                    <fecha_compra>03/07/2021</fecha_compra>
+                    <fecha_entrega>08/07/2021</fecha_entrega>
+                    <total_factura>749€</total_factura>
+                    <items>
+                        <nombre>Apple iPad 2022 10.9" WiFi+Cellular 64GB Plata</nombre>
+                        <referencia>10635701</referencia>
+                        <precio>749€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>22</id_pedido>
+                    <fecha_compra>10/07/2021</fecha_compra>
+                    <fecha_entrega>15/07/2021</fecha_entrega>
+                    <total_factura>135€</total_factura>
+                    <items>
+                        <nombre>Apple Pencil 2a Generación para iPad Pro 2018</nombre>
+                        <referencia>177200</referencia>
+                        <precio>135€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>23</id_pedido>
+                    <fecha_compra>13/07/2021</fecha_compra>
+                    <fecha_entrega>18/07/2021</fecha_entrega>
+                    <total_factura>50€</total_factura>
+                    <items>
+                        <nombre>Apple Recambio Puntas Apple Pencil para iPad Pro</nombre>
+                        <referencia>209757</referencia>
+                        <precio>25€</precio>
+                        <unidades>2</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gay</nombre>
+                <apellidos>Jeffels</apellidos>
+                <tlf>336-486-7487</tlf>
+                <direccion>
+                    <calle>241 Moland Pass</calle>
+                    <ciudad>Greensboro</ciudad>
+                    <cp>27425</cp>
+                    <provincia>North Carolina</provincia>
+                </direccion>
+                <correo>maeillanes@hotmail.com</correo>
+                <fecha_inclusion>22/11/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>24</id_pedido>
+                    <fecha_compra>20/07/2021</fecha_compra>
+                    <fecha_entrega>26/07/2021</fecha_entrega>
+                    <total_factura>349,94€</total_factura>
+                    <items>
+                        <nombre>Newskill Belenor PRO Mesa Gaming Negra Ajustable en Altura 120x60Cm</nombre>
+                        <referencia>10640631</referencia>
+                        <precio>349,94€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gay</nombre>
+                <apellidos>Jeffels</apellidos>
+                <tlf>336-486-7487</tlf>
+                <direccion>
+                    <calle>241 Moland Pass</calle>
+                    <ciudad>Greensboro</ciudad>
+                    <cp>27425</cp>
+                    <provincia>North Carolina</provincia>
+                </direccion>
+                <correo>maeillanes@hotmail.com</correo>
+                <fecha_inclusion>22/11/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>25</id_pedido>
+                    <fecha_compra>27/07/2021</fecha_compra>
+                    <fecha_entrega>01/08/2021</fecha_entrega>
+                    <total_factura>282,99€</total_factura>
+                    <items>
+                        <nombre>Newskill Kuraokami Negra/Blanca</nombre>
+                        <referencia>126926</referencia>
+                        <precio>282,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Francklin</nombre>
+                <apellidos>Trenbey</apellidos>
+                <tlf>720-335-1673</tlf>
+                <direccion>
+                    <calle>5248 Grayhawk Pass</calle>
+                    <ciudad>Littleton</ciudad>
+                    <cp>80127</cp>
+                    <provincia>Colorado</provincia>
+                </direccion>
+                <correo>ftrenbeyq@outlook.com</correo>
+                <fecha_inclusion>28/07/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>26</id_pedido>
+                    <fecha_compra>04/08/2021</fecha_compra>
+                    <fecha_entrega>09/08/2021</fecha_entrega>
+                    <total_factura>203,99€</total_factura>
+                    <items>
+                        <nombre>Apple AirPods 3ª Generación con Estuche de Carga Lightning</nombre>
+                        <referencia>10581540</referencia>
+                        <precio>203,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Becka</nombre>
+                <apellidos>Astlatt</apellidos>
+                <tlf>281-224-1618</tlf>
+                <direccion>
+                    <calle>1 Morningstar Alley</calle>
+                    <ciudad>Houston</ciudad>
+                    <cp>77085</cp>
+                    <provincia>Texas</provincia>
+                </direccion>
+                <correo>bastlattr@hotmail.com</correo>
+                <fecha_inclusion>30/07/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>27</id_pedido>
+                    <fecha_compra>10/08/2021</fecha_compra>
+                    <fecha_entrega>15/07/2021</fecha_entrega>
+                    <total_factura>332,99€</total_factura>
+                    <items>
+                        <nombre>Philips EP2224/10 Cafetera Expresso 15 Bares Negra</nombre>
+                        <referencia>505815</referencia>
+                        <precio>332,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Alasdair</nombre>
+                <apellidos>Fourman</apellidos>
+                <tlf>571-396-5245</tlf>
+                <direccion>
+                    <calle>02159 Delladonna Circle</calle>
+                    <ciudad>Arlington</ciudad>
+                    <cp>22212</cp>
+                    <provincia>Virginia</provincia>
+                </direccion>
+                <correo>afourmans@outlook.es</correo>
+                <fecha_inclusion>02/08/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>28</id_pedido>
+                    <fecha_compra>17/08/2021</fecha_compra>
+                    <fecha_entrega>24/07/2021</fecha_entrega>
+                    <total_factura>1699,99€</total_factura>
+                    <items>
+                        <nombre>Acer Predator Orion 5000 PO5-640 Intel Core i7-12700/16GB/1TB SSD/RTX 3070</nombre>
+                        <referencia>10663072</referencia>
+                        <precio>1699,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gabriello</nombre>
+                <apellidos>Cardall</apellidos>
+                <tlf>713-791-2710</tlf>
+                <direccion>
+                    <calle>5766 Almo Lane</calle>
+                    <ciudad>Houston</ciudad>
+                    <cp>77218</cp>
+                    <provincia>Texas</provincia>
+                </direccion>
+                <correo>gcardallt@gmail.com</correo>
+                <fecha_inclusion>10/08/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>29</id_pedido>
+                    <fecha_compra>26/08/2021</fecha_compra>
+                    <fecha_entrega>31/08/2021</fecha_entrega>
+                    <total_factura>1789€</total_factura>
+                    <items>
+                        <nombre>Denon AVC-X4700H Amplificador AV Plata</nombre>
+                        <referencia>311003</referencia>
+                        <precio>1789€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Marchelle</nombre>
+                <apellidos>Dowley</apellidos>
+                <tlf>727-245-4359</tlf>
+                <direccion>
+                    <calle>4 Tennessee Park</calle>
+                    <ciudad>Tampa</ciudad>
+                    <cp>33625</cp>
+                    <provincia>Florida</provincia>
+                </direccion>
+                <correo>mdowleyu@gmail.com</correo>
+                <fecha_inclusion>25/08/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>30</id_pedido>
+                    <fecha_compra>05/09/2021</fecha_compra>
+                    <fecha_entrega>15/09/2021</fecha_entrega>
+                    <total_factura>348,99€</total_factura>
+                    <items>
+                        <nombre>Nintendo Switch OLED Blanca</nombre>
+                        <referencia>432881</referencia>
+                        <precio>348,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+        </trimestre>
+        <trimestre t="4">
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>31</id_pedido>
+                    <fecha_compra>06/10/2021</fecha_compra>
+                    <fecha_entrega>11/10/2021</fecha_entrega>
+                    <total_factura>324,99€</total_factura>
+                    <items>
+                        <nombre>Sony PlayStation 4 Slim (Chasis F) 500GB</nombre>
+                        <referencia>173603</referencia>
+                        <precio>324,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>32</id_pedido>
+                    <fecha_compra>13/10/2021</fecha_compra>
+                    <fecha_entrega>17/10/2021</fecha_entrega>
+                    <total_factura>33,99€</total_factura>
+                    <items>
+                        <nombre>Battlefield 2042 PS4</nombre>
+                        <referencia>431594</referencia>
+                        <precio>33,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>33</id_pedido>
+                    <fecha_compra>19/10/2021</fecha_compra>
+                    <fecha_entrega>24/10/2021</fecha_entrega>
+                    <total_factura>46,53€</total_factura>
+                    <items>
+                        <nombre>Dying Light 2 Stay Human PS4</nombre>
+                        <referencia>10026782</referencia>
+                        <precio>46,53€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gay</nombre>
+                <apellidos>Jeffels</apellidos>
+                <tlf>336-486-7487</tlf>
+                <direccion>
+                    <calle>241 Moland Pass</calle>
+                    <ciudad>Greensboro</ciudad>
+                    <cp>27425</cp>
+                    <provincia>North Carolina</provincia>
+                </direccion>
+                <correo>maeillanes@hotmail.com</correo>
+                <fecha_inclusion>22/11/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>34</id_pedido>
+                    <fecha_compra>26/10/2021</fecha_compra>
+                    <fecha_entrega>30/10/2021</fecha_entrega>
+                    <total_factura>159,99€</total_factura>
+                    <items>
+                        <nombre>Forgeon Khaydarin ARGB Mesh Torre ATX Blanca</nombre>
+                        <referencia>10666630</referencia>
+                        <precio>159,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gay</nombre>
+                <apellidos>Jeffels</apellidos>
+                <tlf>336-486-7487</tlf>
+                <direccion>
+                    <calle>241 Moland Pass</calle>
+                    <ciudad>Greensboro</ciudad>
+                    <cp>27425</cp>
+                    <provincia>North Carolina</provincia>
+                </direccion>
+                <correo>maeillanes@hotmail.com</correo>
+                <fecha_inclusion>22/11/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>35</id_pedido>
+                    <fecha_compra>02/11/2021</fecha_compra>
+                    <fecha_entrega>08/11/2021</fecha_entrega>
+                    <total_factura>207,98€</total_factura>
+                    <items>
+                        <nombre>Bose Companion 2 Series III Altavoces Multimedia Negro</nombre>
+                        <referencia>188443</referencia>
+                        <precio>103,99€</precio>
+                        <unidades>2</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Ugo</nombre>
+                <apellidos>Dewsnap</apellidos>
+                <tlf>520-568-2217</tlf>
+                <direccion>
+                    <calle>98985 Mcbride Road</calle>
+                    <ciudad>Tucson</ciudad>
+                    <cp>85720</cp>
+                    <provincia>Arizona</provincia>
+                </direccion>
+                <correo>udewsnapv@gmail.com</correo>
+                <fecha_inclusion>20/10/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>36</id_pedido>
+                    <fecha_compra>10/11/2021</fecha_compra>
+                    <fecha_entrega>15/11/2021</fecha_entrega>
+                    <total_factura>83,98€</total_factura>
+                    <items>
+                        <nombre>Tempest Cooler 4Pipes Black RGB Ventilador CPU 120mm Negro</nombre>
+                        <referencia>516908</referencia>
+                        <precio>41,99€</precio>
+                        <unidades>2</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Berta</nombre>
+                <apellidos>Stieger</apellidos>
+                <tlf>253-967-0063</tlf>
+                <direccion>
+                    <calle>62 Gina Trail</calle>
+                    <ciudad>Tacoma</ciudad>
+                    <cp>98442</cp>
+                    <provincia>Washington</provincia>
+                </direccion>
+                <correo>bstiegerw@hotmail.com</correo>
+                <fecha_inclusion>10/11/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>37</id_pedido>
+                    <fecha_compra>17/11/2021</fecha_compra>
+                    <fecha_entrega>22/11/2021</fecha_entrega>
+                    <total_factura>69,99€</total_factura>
+                    <items>
+                        <nombre>Hogwarts Legacy Standard PS5</nombre>
+                        <referencia>10651666</referencia>
+                        <precio>69,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Elna</nombre>
+                <apellidos>Ralfe</apellidos>
+                <tlf>909-230-1086</tlf>
+                <direccion>
+                    <calle>83175 Westridge Park</calle>
+                    <ciudad>San Bernardino</ciudad>
+                    <cp>92405</cp>
+                    <provincia>California</provincia>
+                </direccion>
+                <correo>eralfex@yahoo.es</correo>
+                <fecha_inclusion>15/11/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>38</id_pedido>
+                    <fecha_compra>24/11/2021</fecha_compra>
+                    <fecha_entrega>27/11/2021</fecha_entrega>
+                    <total_factura>59,98€</total_factura>
+                    <items>
+                        <nombre>Legend of Zelda:Breath of the Wild Nintendo Switch</nombre>
+                        <referencia>117185</referencia>
+                        <precio>59,98€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kris</nombre>
+                <apellidos>Bayston</apellidos>
+                <tlf>956-397-8486</tlf>
+                <direccion>
+                    <calle>6919 Trailsway Junction</calle>
+                    <ciudad>Laredo</ciudad>
+                    <cp>78044</cp>
+                    <provincia>Texas</provincia>
+                </direccion>
+                <correo>kbaystony@gmail.com</correo>
+                <fecha_inclusion>20/11/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>39</id_pedido>
+                    <fecha_compra>29/11/2021</fecha_compra>
+                    <fecha_entrega>02/12/2021</fecha_entrega>
+                    <total_factura>207,98€</total_factura>
+                    <items>
+                        <nombre>Joy-It ard_Mega2560PRO Placa Microcontrolador</nombre>
+                        <referencia>390706</referencia>
+                        <precio>103,99€</precio>
+                        <unidades>2</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Leisha</nombre>
+                <apellidos>Leathart</apellidos>
+                <tlf>801-310-9849</tlf>
+                <direccion>
+                    <calle>64 Schlimgen Drive</calle>
+                    <ciudad>Salt Lake City</ciudad>
+                    <cp>84110</cp>
+                    <provincia>Utah</provincia>
+                </direccion>
+                <correo>lleathartz@outlook.es</correo>
+                <fecha_inclusion>25/11/2021</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>40</id_pedido>
+                    <fecha_compra>04/12/2021</fecha_compra>
+                    <fecha_entrega>14/12/2021</fecha_entrega>
+                    <total_factura>45€</total_factura>
+                    <items>
+                        <nombre>Loring Zurich Filtro Gafas Luz Azul para Ordenador +1.50 Dioptrías</nombre>
+                        <referencia>363691</referencia>
+                        <precio>15€</precio>
+                        <unidades>3</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+        </trimestre>
+    </year>
+    <year y="2022">
+        <trimestre t="1">
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>02/01/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>41</id_pedido>
+                    <fecha_compra>04/01/2022</fecha_compra>
+                    <fecha_entrega>10/01/2022</fecha_entrega>
+                    <total_factura>1409,01€</total_factura>
+                    <items>
+                        <nombre>Apple Macbook Pro Apple M2/8GB/256GB SSD/GPU Deca Core/13.3" Gris Espacial</nombre>
+                        <referencia>10392475</referencia>
+                        <precio>1409,01€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>02/01/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>42</id_pedido>
+                    <fecha_compra>11/01/2022</fecha_compra>
+                    <fecha_entrega>15/01/2022</fecha_entrega>
+                    <total_factura>49,98€</total_factura>
+                    <items>
+                        <nombre>Belkin Boost Charge Base de Carga Portátil Alineación Magnética 7.5W Blanco</nombre>
+                        <referencia>10569807</referencia>
+                        <precio>24,99€</precio>
+                        <unidades>2</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>02/01/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>43</id_pedido>
+                    <fecha_compra>16/01/2022</fecha_compra>
+                    <fecha_entrega>21/01/2022</fecha_entrega>
+                    <total_factura>11,43€</total_factura>
+                    <items>
+                        <nombre>Conceptronic Thana Ergo S Base Refrigeradora para Portátil hasta 15.6" Negra</nombre>
+                        <referencia>305726</referencia>
+                        <precio>11,43€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gay</nombre>
+                <apellidos>Jeffels</apellidos>
+                <tlf>336-486-7487</tlf>
+                <direccion>
+                    <calle>241 Moland Pass</calle>
+                    <ciudad>Greensboro</ciudad>
+                    <cp>27425</cp>
+                    <provincia>North Carolina</provincia>
+                </direccion>
+                <correo>maeillanes@hotmail.com</correo>
+                <fecha_inclusion>22/11/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>44</id_pedido>
+                    <fecha_compra>22/01/2022</fecha_compra>
+                    <fecha_entrega>27/01/2022</fecha_entrega>
+                    <total_factura>399,89€</total_factura>
+                    <items>
+                        <nombre>Zotac Gaming GeForce RTX 3060 Twin Edge LHR 12GB GDDR6</nombre>
+                        <referencia>357142</referencia>
+                        <precio>399,89€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gay</nombre>
+                <apellidos>Jeffels</apellidos>
+                <tlf>336-486-7487</tlf>
+                <direccion>
+                    <calle>241 Moland Pass</calle>
+                    <ciudad>Greensboro</ciudad>
+                    <cp>27425</cp>
+                    <provincia>North Carolina</provincia>
+                </direccion>
+                <correo>maeillanes@hotmail.com</correo>
+                <fecha_inclusion>22/11/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>45</id_pedido>
+                    <fecha_compra>29/01/2022</fecha_compra>
+                    <fecha_entrega>03/02/2022</fecha_entrega>
+                    <total_factura>178€</total_factura>
+                    <items>
+                        <nombre>Approx AAPOS80AM Impresora de Tickets</nombre>
+                        <referencia>98081</referencia>
+                        <precio>89€</precio>
+                        <unidades>2</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Candis</nombre>
+                <apellidos>Curley</apellidos>
+                <tlf>845-673-0730</tlf>
+                <direccion>
+                    <calle>2715 Gerald Court</calle>
+                    <ciudad>White Plains</ciudad>
+                    <cp>10606</cp>
+                    <provincia>New York</provincia>
+                </direccion>
+                <correo>ccurley10@outlook.com</correo>
+                <fecha_inclusion>04/01/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>46</id_pedido>
+                    <fecha_compra>05/02/2022</fecha_compra>
+                    <fecha_entrega>10/02/2022</fecha_entrega>
+                    <total_factura>149,99€</total_factura>
+                    <items>
+                        <nombre>Edifier D12 Altavoces Bluetooth 70W RMS Negro</nombre>
+                        <referencia>10476747</referencia>
+                        <precio>149,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Lura</nombre>
+                <apellidos>Duguid</apellidos>
+                <tlf>407-706-7509</tlf>
+                <direccion>
+                    <calle>284 Village Green Trail</calle>
+                    <ciudad>Orlando</ciudad>
+                    <cp>32854</cp>
+                    <provincia>Florida</provincia>
+                </direccion>
+                <correo>lduguid11@gmail.com</correo>
+                <fecha_inclusion>08/02/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>47</id_pedido>
+                    <fecha_compra>12/02/2022</fecha_compra>
+                    <fecha_entrega>16/02/2022</fecha_entrega>
+                    <total_factura>158,97€</total_factura>
+                    <items>
+                        <nombre>UAG Correa Nato Gris para Apple Watch 38/40mm</nombre>
+                        <referencia>260365</referencia>
+                        <precio>52,99€</precio>
+                        <unidades>3</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Iain</nombre>
+                <apellidos>Scott</apellidos>
+                <tlf>409-692-7636</tlf>
+                <direccion>
+                    <calle>453 Summer Ridge Center</calle>
+                    <ciudad>Galveston</ciudad>
+                    <cp>77554</cp>
+                    <provincia>Texas</provincia>
+                </direccion>
+                <correo>iscott12@hotmail.com</correo>
+                <fecha_inclusion>11/02/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>48</id_pedido>
+                    <fecha_compra>18/02/2022</fecha_compra>
+                    <fecha_entrega>23/02/2022</fecha_entrega>
+                    <total_factura>949,98€</total_factura>
+                    <items>
+                        <nombre>Medion Erazer Recon P20 MD35173 Intel Core i5-11400/16GB/512GB SSD/RTX 3060</nombre>
+                        <referencia>10645558</referencia>
+                        <precio>949,98€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Giulia</nombre>
+                <apellidos>Farndon</apellidos>
+                <tlf>763-972-0199</tlf>
+                <direccion>
+                    <calle>80 Namekagon Pass</calle>
+                    <ciudad>Maple Plain</ciudad>
+                    <cp>55572</cp>
+                    <provincia>Minnesota</provincia>
+                </direccion>
+                <correo>gfarndon13@gmail.com</correo>
+                <fecha_inclusion>22/02/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>49</id_pedido>
+                    <fecha_compra>24/02/2022</fecha_compra>
+                    <fecha_entrega>28/02/2022</fecha_entrega>
+                    <total_factura>1399,89€</total_factura>
+                    <items>
+                        <nombre>Epical-Q Pack GPlus6 Intel Core i5-12400F/16GB/1TB SSD/RTX 3060 + Monitor 23.6" 165Hz + Combo Gaming</nombre>
+                        <referencia>10653681</referencia>
+                        <precio>1399,89€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Lorelei</nombre>
+                <apellidos>Godard</apellidos>
+                <tlf>605-575-6399</tlf>
+                <direccion>
+                    <calle>8085 Dixon Court</calle>
+                    <ciudad>Sioux Falls</ciudad>
+                    <cp>57188</cp>
+                    <provincia>South Dakota</provincia>
+                </direccion>
+                <correo>lgodard14@gmail.com</correo>
+                <fecha_inclusion>27/02/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>50</id_pedido>
+                    <fecha_compra>03/03/2022</fecha_compra>
+                    <fecha_entrega>13/03/2022</fecha_entrega>
+                    <total_factura>50,99€</total_factura>
+                    <items>
+                        <nombre>Tempest PSU 750W Fuente de Alimentación</nombre>
+                        <referencia>179285</referencia>
+                        <precio>50,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+        </trimestre>
+        <trimestre t="2">
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>51</id_pedido>
+                    <fecha_compra>01/04/2022</fecha_compra>
+                    <fecha_entrega>08/04/2022</fecha_entrega>
+                    <total_factura>59,99€</total_factura>
+                    <items>
+                        <nombre>Youin EN1040K You-Box Receptor Android TV 2GB/8GB 4K WiFi</nombre>
+                        <referencia>395897</referencia>
+                        <precio>59,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>52</id_pedido>
+                    <fecha_compra>10/04/2022</fecha_compra>
+                    <fecha_entrega>15/04/2022</fecha_entrega>
+                    <total_factura>113,98€</total_factura>
+                    <items>
+                        <nombre>Epson Perfection V39 Escáner</nombre>
+                        <referencia>135386</referencia>
+                        <precio>113,98€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>53</id_pedido>
+                    <fecha_compra>17/04/2022</fecha_compra>
+                    <fecha_entrega>22/04/2022</fecha_entrega>
+                    <total_factura>103,98€</total_factura>
+                    <items>
+                        <nombre>ASUS PCE-AX1800 Adaptador PCIe AX1800 WiFi 6 Bluetooth 5.2</nombre>
+                        <referencia>10410739</referencia>
+                        <precio>51,99€</precio>
+                        <unidades>2</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gay</nombre>
+                <apellidos>Jeffels</apellidos>
+                <tlf>336-486-7487</tlf>
+                <direccion>
+                    <calle>241 Moland Pass</calle>
+                    <ciudad>Greensboro</ciudad>
+                    <cp>27425</cp>
+                    <provincia>North Carolina</provincia>
+                </direccion>
+                <correo>maeillanes@hotmail.com</correo>
+                <fecha_inclusion>22/11/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>54</id_pedido>
+                    <fecha_compra>24/04/2022</fecha_compra>
+                    <fecha_entrega>29/04/2022</fecha_entrega>
+                    <total_factura>69,97€</total_factura>
+                    <items>
+                        <nombre>Sony DualSense Mando Inalámbrico para PS5</nombre>
+                        <referencia>323970</referencia>
+                        <precio>69,97€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gay</nombre>
+                <apellidos>Jeffels</apellidos>
+                <tlf>336-486-7487</tlf>
+                <direccion>
+                    <calle>241 Moland Pass</calle>
+                    <ciudad>Greensboro</ciudad>
+                    <cp>27425</cp>
+                    <provincia>North Carolina</provincia>
+                </direccion>
+                <correo>maeillanes@hotmail.com</correo>
+                <fecha_inclusion>22/11/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>55</id_pedido>
+                    <fecha_compra>30/04/2022</fecha_compra>
+                    <fecha_entrega>04/05/2022</fecha_entrega>
+                    <total_factura>103,98€</total_factura>
+                    <items>
+                        <nombre>Startech Adaptador Gráfico USB-C a HDMI/DVI/VGA</nombre>
+                        <referencia>226859</referencia>
+                        <precio>51,99€</precio>
+                        <unidades>2</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Irina</nombre>
+                <apellidos>Bargery</apellidos>
+                <tlf>615-641-3221</tlf>
+                <direccion>
+                    <calle>6908 Anhalt Parkway</calle>
+                    <ciudad>Nashville</ciudad>
+                    <cp>37215</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>ibargery15@hotmail.com</correo>
+                <fecha_inclusion>02/05/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>56</id_pedido>
+                    <fecha_compra>06/05/2022</fecha_compra>
+                    <fecha_entrega>11/05/2022</fecha_entrega>
+                    <total_factura>115,99€</total_factura>
+                    <items>
+                        <nombre>Corsair iCUE ELITE CPU LCD Display Kit de Actualización del Refrigerador Negro</nombre>
+                        <referencia>10650996</referencia>
+                        <precio>115,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Garland</nombre>
+                <apellidos>Molan</apellidos>
+                <tlf>813-736-0708</tlf>
+                <direccion>
+                    <calle>6 Prentice Circle</calle>
+                    <ciudad>Clearwater</ciudad>
+                    <cp>33758</cp>
+                    <provincia>Florida</provincia>
+                </direccion>
+                <correo>gmolan16@gmail.com</correo>
+                <fecha_inclusion>08/05/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>57</id_pedido>
+                    <fecha_compra>14/05/2022</fecha_compra>
+                    <fecha_entrega>19/05/2022</fecha_entrega>
+                    <total_factura>95,98€</total_factura>
+                    <items>
+                        <nombre>Corsair Lightning Node Pro Tiras Led RGB</nombre>
+                        <referencia>138223</referencia>
+                        <precio>47,99€</precio>
+                        <unidades>2</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Garfield</nombre>
+                <apellidos>Burt</apellidos>
+                <tlf>508-739-7531</tlf>
+                <direccion>
+                    <calle>39068 Moulton Street</calle>
+                    <ciudad>New Bedford</ciudad>
+                    <cp>2745</cp>
+                    <provincia>Massachusetts</provincia>
+                </direccion>
+                <correo>gburt17@outlook.com</correo>
+                <fecha_inclusion>17/05/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>58</id_pedido>
+                    <fecha_compra>21/05/2022</fecha_compra>
+                    <fecha_entrega>27/05/2022</fecha_entrega>
+                    <total_factura>34,66€</total_factura>
+                    <items>
+                        <nombre>Equip 769224 Patch Panel 24 Puertos Cat 6 1U 19 "</nombre>
+                        <referencia>160595</referencia>
+                        <precio>17,33€</precio>
+                        <unidades>2</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Maurie</nombre>
+                <apellidos>Emby</apellidos>
+                <tlf>812-303-2980</tlf>
+                <direccion>
+                    <calle>8 Arkansas Way</calle>
+                    <ciudad>Evansville</ciudad>
+                    <cp>47737</cp>
+                    <provincia>Indiana</provincia>
+                </direccion>
+                <correo>memby18@outlook.es</correo>
+                <fecha_inclusion>22/05/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>59</id_pedido>
+                    <fecha_compra>29/05/2022</fecha_compra>
+                    <fecha_entrega>04/06/2022</fecha_entrega>
+                    <total_factura>127,99€</total_factura>
+                    <items>
+                        <nombre>Microsoft Windows 11 Home 64 Bit Español Licencia Permanente FPP USB</nombre>
+                        <referencia>10222069</referencia>
+                        <precio>127,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Archaimbaud</nombre>
+                <apellidos>Laimable</apellidos>
+                <tlf>414-609-9190</tlf>
+                <direccion>
+                    <calle>33283 Melrose Pass</calle>
+                    <ciudad>Milwaukee</ciudad>
+                    <cp>53220</cp>
+                    <provincia>Wisconsin</provincia>
+                </direccion>
+                <correo>alaimable19@yahoo.com</correo>
+                <fecha_inclusion>02/06/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>60</id_pedido>
+                    <fecha_compra>06/06/2022</fecha_compra>
+                    <fecha_entrega>12/06/2022</fecha_entrega>
+                    <total_factura>51,99€</total_factura>
+                    <items>
+                        <nombre>Logitech G432 Auriculares Gaming 7.1</nombre>
+                        <referencia>201439</referencia>
+                        <precio>51,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+        </trimestre>
+        <trimestre t="3">
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>61</id_pedido>
+                    <fecha_compra>01/07/2022</fecha_compra>
+                    <fecha_entrega>07/07/2022</fecha_entrega>
+                    <total_factura>20,10€</total_factura>
+                    <items>
+                        <nombre>Mobile Tech Cargador Coche 2 Salidas USB/USB-C 20W + Cable USB-C</nombre>
+                        <referencia>752879</referencia>
+                        <precio>20,10€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>62</id_pedido>
+                    <fecha_compra>09/07/2022</fecha_compra>
+                    <fecha_entrega>14/07/2022</fecha_entrega>
+                    <total_factura>32,75€</total_factura>
+                    <items>
+                        <nombre>Pioneer TS-G1330F Altavoces de 3 Vías para Coche 13cm 250W</nombre>
+                        <referencia>232575</referencia>
+                        <precio>32,75€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>63</id_pedido>
+                    <fecha_compra>16/07/2022</fecha_compra>
+                    <fecha_entrega>20/07/2022</fecha_entrega>
+                    <total_factura>59,99€</total_factura>
+                    <items>
+                        <nombre>JVC KD-X262 Autoradio USB/AUX/Android/iOS</nombre>
+                        <referencia>231666</referencia>
+                        <precio>59,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gay</nombre>
+                <apellidos>Jeffels</apellidos>
+                <tlf>336-486-7487</tlf>
+                <direccion>
+                    <calle>241 Moland Pass</calle>
+                    <ciudad>Greensboro</ciudad>
+                    <cp>27425</cp>
+                    <provincia>North Carolina</provincia>
+                </direccion>
+                <correo>maeillanes@hotmail.com</correo>
+                <fecha_inclusion>22/11/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>64</id_pedido>
+                    <fecha_compra>21/07/2022</fecha_compra>
+                    <fecha_entrega>26/07/2022</fecha_entrega>
+                    <total_factura>62,88€</total_factura>
+                    <items>
+                        <nombre>BaByliss Perfect Finish Cepillo Alisador 1000W</nombre>
+                        <referencia>326731</referencia>
+                        <precio>62,88€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gay</nombre>
+                <apellidos>Jeffels</apellidos>
+                <tlf>336-486-7487</tlf>
+                <direccion>
+                    <calle>241 Moland Pass</calle>
+                    <ciudad>Greensboro</ciudad>
+                    <cp>27425</cp>
+                    <provincia>North Carolina</provincia>
+                </direccion>
+                <correo>maeillanes@hotmail.com</correo>
+                <fecha_inclusion>22/11/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>65</id_pedido>
+                    <fecha_compra>28/07/2022</fecha_compra>
+                    <fecha_entrega>02/08/2022</fecha_entrega>
+                    <total_factura>90,08€</total_factura>
+                    <items>
+                        <nombre>Bellissima Straight and Waves B29 100 Plancha de Pelo Rizadora 2 en 1</nombre>
+                        <referencia>615793</referencia>
+                        <precio>90,08€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Julissa</nombre>
+                <apellidos>Boltwood</apellidos>
+                <tlf>716-819-8567</tlf>
+                <direccion>
+                    <calle>65 Prairie Rose Street</calle>
+                    <ciudad>Buffalo</ciudad>
+                    <cp>14220</cp>
+                    <provincia>New York</provincia>
+                </direccion>
+                <correo>jboltwood1a@yahoo.es</correo>
+                <fecha_inclusion>29/07/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>66</id_pedido>
+                    <fecha_compra>04/08/2022</fecha_compra>
+                    <fecha_entrega>10/08/2022</fecha_entrega>
+                    <total_factura>1129€</total_factura>
+                    <items>
+                        <nombre>Apple iPhone 14 Plus 128GB Púrpura Libre</nombre>
+                        <referencia>10581374</referencia>
+                        <precio>1129€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Candie</nombre>
+                <apellidos>Allain</apellidos>
+                <tlf>817-567-8104</tlf>
+                <direccion>
+                    <calle>1 Summerview Parkway</calle>
+                    <ciudad>Arlington</ciudad>
+                    <cp>76004</cp>
+                    <provincia>Texas</provincia>
+                </direccion>
+                <correo>callain1b@hotmail.com</correo>
+                <fecha_inclusion>08/08/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>67</id_pedido>
+                    <fecha_compra>12/08/2022</fecha_compra>
+                    <fecha_entrega>19/08/2022</fecha_entrega>
+                    <total_factura>350,28€</total_factura>
+                    <items>
+                        <nombre>Lenovo D32u-40 31.5" LED UltraHD 4K</nombre>
+                        <referencia>10668625</referencia>
+                        <precio>350,28€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Parke</nombre>
+                <apellidos>Jaye</apellidos>
+                <tlf>863-315-1435</tlf>
+                <direccion>
+                    <calle>50524 Green Ridge Hill</calle>
+                    <ciudad>Lakeland</ciudad>
+                    <cp>33811</cp>
+                    <provincia>Florida</provincia>
+                </direccion>
+                <correo>pjaye1c@hotmail.com</correo>
+                <fecha_inclusion>18/08/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>68</id_pedido>
+                    <fecha_compra>20/08/2022</fecha_compra>
+                    <fecha_entrega>26/08/2022</fecha_entrega>
+                    <total_factura>498,99€</total_factura>
+                    <items>
+                        <nombre>LG Ultrafine 32UP550N-W 31.5" LED UltraHD 4K FreeSync</nombre>
+                        <referencia>10661762</referencia>
+                        <precio>498,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Vitoria</nombre>
+                <apellidos>Eggleston</apellidos>
+                <tlf>706-745-7908</tlf>
+                <direccion>
+                    <calle>58792 Lotheville Trail</calle>
+                    <ciudad>Augusta</ciudad>
+                    <cp>30911</cp>
+                    <provincia>Georgia</provincia>
+                </direccion>
+                <correo>veggleston1d@gmail.com</correo>
+                <fecha_inclusion>22/08/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>69</id_pedido>
+                    <fecha_compra>28/08/2022</fecha_compra>
+                    <fecha_entrega>04/09/2022</fecha_entrega>
+                    <total_factura>499€</total_factura>
+                    <items>
+                        <nombre>ASUS ZenBeam Latte L1 Proyector LED Portátil 300 Lúmenes con Altavoz Bluetooth 10W</nombre>
+                        <referencia>395902</referencia>
+                        <precio>499€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Giffard</nombre>
+                <apellidos>Di Batista</apellidos>
+                <tlf>971-991-4695</tlf>
+                <direccion>
+                    <calle>99 Sunbrook Crossing</calle>
+                    <ciudad>Portland</ciudad>
+                    <cp>97240</cp>
+                    <provincia>Oregon</provincia>
+                </direccion>
+                <correo>gdibatista1e@outlook.com</correo>
+                <fecha_inclusion>03/09/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>70</id_pedido>
+                    <fecha_compra>08/09/2022</fecha_compra>
+                    <fecha_entrega>14/09/2022</fecha_entrega>
+                    <total_factura>569,38€</total_factura>
+                    <items>
+                        <nombre>Samsung The FreeStyle SP-LSP3BLAXXE Proyector 100" LED FullHD SmartTV</nombre>
+                        <referencia>10026465</referencia>
+                        <precio>569,38€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+        </trimestre>
+        <trimestre t="4">
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>71</id_pedido>
+                    <fecha_compra>02/10/2022</fecha_compra>
+                    <fecha_entrega>10/10/2022</fecha_entrega>
+                    <total_factura>407,99€</total_factura>
+                    <items>
+                        <nombre>Xiaomi Mi Electric Scooter 3 Gris</nombre>
+                        <referencia>514036</referencia>
+                        <precio>407,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>72</id_pedido>
+                    <fecha_compra>12/10/2022</fecha_compra>
+                    <fecha_entrega>18/10/2022</fecha_entrega>
+                    <total_factura>4,25€</total_factura>
+                    <items>
+                        <nombre>Faro para Patinete Xiaomi M365/Pro/1S/Essential/Pro2</nombre>
+                        <referencia>382724</referencia>
+                        <precio>4,25€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kara</nombre>
+                <apellidos>Roose</apellidos>
+                <tlf>865-212-0796</tlf>
+                <direccion>
+                    <calle>13779 Crescent Oaks Terrace</calle>
+                    <ciudad>Knoxville</ciudad>
+                    <cp>37919</cp>
+                    <provincia>Tennessee</provincia>
+                </direccion>
+                <correo>iabarcae@yahoo.es</correo>
+                <fecha_inclusion>08/07/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>73</id_pedido>
+                    <fecha_compra>20/10/2022</fecha_compra>
+                    <fecha_entrega>27/10/2022</fecha_entrega>
+                    <total_factura>7,89€</total_factura>
+                    <items>
+                        <nombre>Kit de Reparación Bomba de Aire + Palanca + Herramienta de Reparación de Neumáticos + Llave + Destor</nombre>
+                        <referencia>382671</referencia>
+                        <precio>7,89€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gay</nombre>
+                <apellidos>Jeffels</apellidos>
+                <tlf>336-486-7487</tlf>
+                <direccion>
+                    <calle>241 Moland Pass</calle>
+                    <ciudad>Greensboro</ciudad>
+                    <cp>27425</cp>
+                    <provincia>North Carolina</provincia>
+                </direccion>
+                <correo>maeillanes@hotmail.com</correo>
+                <fecha_inclusion>22/11/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>74</id_pedido>
+                    <fecha_compra>28/10/2022</fecha_compra>
+                    <fecha_entrega>02/11/2022</fecha_entrega>
+                    <total_factura>70,99€</total_factura>
+                    <items>
+                        <nombre>Olympus RC II Prismáticos 8x21 Dorado</nombre>
+                        <referencia>214144</referencia>
+                        <precio>70,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Gay</nombre>
+                <apellidos>Jeffels</apellidos>
+                <tlf>336-486-7487</tlf>
+                <direccion>
+                    <calle>241 Moland Pass</calle>
+                    <ciudad>Greensboro</ciudad>
+                    <cp>27425</cp>
+                    <provincia>North Carolina</provincia>
+                </direccion>
+                <correo>maeillanes@hotmail.com</correo>
+                <fecha_inclusion>22/11/2020</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>75</id_pedido>
+                    <fecha_compra>03/11/2022</fecha_compra>
+                    <fecha_entrega>10/11/2022</fecha_entrega>
+                    <total_factura>169€</total_factura>
+                    <items>
+                        <nombre>Bresser Binocular Visión Nocturna Digital 1x con Arnés</nombre>
+                        <referencia>255835</referencia>
+                        <precio>169€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Rock</nombre>
+                <apellidos>Arons</apellidos>
+                <tlf>859-754-8289</tlf>
+                <direccion>
+                    <calle>58871 Sutherland Road</calle>
+                    <ciudad>Lexington</ciudad>
+                    <cp>40591</cp>
+                    <provincia>Kentucky</provincia>
+                </direccion>
+                <correo>rarons1f@gmail.com</correo>
+                <fecha_inclusion>08/11/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>76</id_pedido>
+                    <fecha_compra>12/11/2022</fecha_compra>
+                    <fecha_entrega>18/11/2022</fecha_entrega>
+                    <total_factura>339,01€</total_factura>
+                    <items>
+                        <nombre>HP ChromeBook 14b-na0014ns AMD Ryzen 3 3250C/8GB/128GB SSD/14"</nombre>
+                        <referencia>593040</referencia>
+                        <precio>339,01€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kele</nombre>
+                <apellidos>Haggarty</apellidos>
+                <tlf>918-812-6484</tlf>
+                <direccion>
+                    <calle>385 Pine View Point</calle>
+                    <ciudad>Tulsa</ciudad>
+                    <cp>74156</cp>
+                    <provincia>Oklahoma</provincia>
+                </direccion>
+                <correo>khaggarty1g@yahoo.com</correo>
+                <fecha_inclusion>12/11/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>77</id_pedido>
+                    <fecha_compra>20/11/2022</fecha_compra>
+                    <fecha_entrega>26/11/2022</fecha_entrega>
+                    <total_factura>394,99€</total_factura>
+                    <items>
+                        <nombre>Realme GT Neo 3T 8/256GB Naranja Libre</nombre>
+                        <referencia>10513969</referencia>
+                        <precio>394,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Kennie</nombre>
+                <apellidos>Findley</apellidos>
+                <tlf>202-964-6348</tlf>
+                <direccion>
+                    <calle>56884 Northwestern Place</calle>
+                    <ciudad>Washington</ciudad>
+                    <cp>20580</cp>
+                    <provincia>District of Columbia</provincia>
+                </direccion>
+                <correo>kfindley1h@hotmail.com</correo>
+                <fecha_inclusion>22/11/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>78</id_pedido>
+                    <fecha_compra>28/11/2022</fecha_compra>
+                    <fecha_entrega>04/12/2022</fecha_entrega>
+                    <total_factura>103,98€</total_factura>
+                    <items>
+                        <nombre>Kingston FURY Beast DDR4 3200 MHz 16GB 2x8GB CL16</nombre>
+                        <referencia>432664</referencia>
+                        <precio>51,99€</precio>
+                        <unidades>2</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Albie</nombre>
+                <apellidos>Laming</apellidos>
+                <tlf>254-697-0486</tlf>
+                <direccion>
+                    <calle>53 Hayes Lane</calle>
+                    <ciudad>Killeen</ciudad>
+                    <cp>76544</cp>
+                    <provincia>Texas</provincia>
+                </direccion>
+                <correo>alaming1i@yahoo.es</correo>
+                <fecha_inclusion>02/12/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>79</id_pedido>
+                    <fecha_compra>08/12/2022</fecha_compra>
+                    <fecha_entrega>14/12/2022</fecha_entrega>
+                    <total_factura>65,67€</total_factura>
+                    <items>
+                        <nombre>Xiaomi Redmi Buds 3 Lite Auriculares Bluetooth Negros</nombre>
+                        <referencia>10011243</referencia>
+                        <precio>21,89€</precio>
+                        <unidades>3</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+            <cliente>
+                <nombre>Isabelle</nombre>
+                <apellidos>Theis</apellidos>
+                <tlf>404-241-0656</tlf>
+                <direccion>
+                    <calle>261 Bashford Trail</calle>
+                    <ciudad>Atlanta</ciudad>
+                    <cp>31196</cp>
+                    <provincia>Georgia</provincia>
+                </direccion>
+                <correo>itheis1j@hotmail.com</correo>
+                <fecha_inclusion>12/12/2022</fecha_inclusion>
+                <detalles_pedido>
+                    <id_pedido>80</id_pedido>
+                    <fecha_compra>18/12/2022</fecha_compra>
+                    <fecha_entrega>23/12/2022</fecha_entrega>
+                    <total_factura>54,99€</total_factura>
+                    <items>
+                        <nombre>Logitech G502 Hero Ratón Gaming 25600DPI</nombre>
+                        <referencia>179806</referencia>
+                        <precio>54,99€</precio>
+                        <unidades>1</unidades>
+                    </items>
+                </detalles_pedido>
+            </cliente>
+        </trimestre>
+    </year>
+</pedidos>

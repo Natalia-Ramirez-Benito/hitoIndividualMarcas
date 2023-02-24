@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hito Individual Natalia Ramírez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">	<script src="fase1.xml"></script>
+    <style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+        @media screen and (min-width: 600px), screen and (orientation: landscape) {
+            body {
+                padding: 20px;
+            }
+        }
+	</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #adadad;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Hito Individual</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="clientes.html">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="factura.html">Factura</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pedidos.html">Pedidos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pedidosTrimestres.html">Trimestres</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+	<h1 class="h1 text-center">Factura 2021 1º Trimestre</h1>
+    <script>
+        if (window.XMLHttpRequest)
+        {
+            xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET","fase1.xml",false);
+        xmlhttp.send();
+        xmlDoc=xmlhttp.responseXML;
+        const section = document.querySelector('section');
+        document.write("<table class='table table-responsive table-dark align-middle' border='10'>");
+        var notes=xmlDoc.getElementsByTagName("cliente");
+
+        
+        document.write("<tr><th>Nombre</th><th>Apellidos</th><th>TLF</th><th>Calle</th><th>Ciudad</th><th>CP</th><th>Provincia</th><th>Correo Electrónico</th><th>Fecha inclusión</th><th>ID Pedido</th><th>Fecha de compra</th><th>Fecha de entrega</th><th>Total de la factura</th><th>Nombre producto</th><th>Referencia</th><th>Precio</th><th>Unidades</th></tr>");
+
+        for(i=0; i<10;i++){
+            nombre=notes[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue
+            apellidos=notes[i].getElementsByTagName("apellidos")[0].childNodes[0].nodeValue
+            tlf=notes[i].getElementsByTagName("tlf")[0].childNodes[0].nodeValue
+            calle=notes[i].getElementsByTagName("calle")[0].childNodes[0].nodeValue
+            ciudad=notes[i].getElementsByTagName("ciudad")[0].childNodes[0].nodeValue
+            cp=notes[i].getElementsByTagName("cp")[0].childNodes[0].nodeValue
+            provincia=notes[i].getElementsByTagName("provincia")[0].childNodes[0].nodeValue
+            correo=notes[i].getElementsByTagName("correo")[0].childNodes[0].nodeValue
+            fechaInclusion=notes[i].getElementsByTagName("fecha_inclusion")[0].childNodes[0].nodeValue
+            idPedido=notes[i].getElementsByTagName("id_pedido")[0].childNodes[0].nodeValue
+            fechaCompra=notes[i].getElementsByTagName("fecha_compra")[0].childNodes[0].nodeValue
+            fechaEntrega=notes[i].getElementsByTagName("fecha_entrega")[0].childNodes[0].nodeValue
+            totalFactura=notes[i].getElementsByTagName("total_factura")[0].childNodes[0].nodeValue
+            nombre=notes[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue
+            referencia=notes[i].getElementsByTagName("referencia")[0].childNodes[0].nodeValue
+            precio=notes[i].getElementsByTagName("precio")[0].childNodes[0].nodeValue
+            unidades=notes[i].getElementsByTagName("unidades")[0].childNodes[0].nodeValue
+
+
+            document.write("<tr><td>");
+            document.write(nombre);
+            document.write("</td><td>");
+            document.write(apellidos);
+            document.write("</td><td>");
+            document.write(tlf);
+            document.write("</td><td>");
+            document.write(calle);
+            document.write("</td><td>");
+            document.write(ciudad);
+            document.write("</td><td>");
+            document.write(cp);
+            document.write("</td><td>");
+            document.write(provincia);
+            document.write("</td><td>");
+            document.write(correo);
+            document.write("</td><td>");
+            document.write(fechaInclusion);
+            document.write("</td><td>");
+            document.write(idPedido);
+            document.write("</td><td>");
+            document.write(fechaCompra);
+            document.write("</td><td>");
+            document.write(fechaEntrega);
+            document.write("</td><td>");
+            document.write(totalFactura);
+            document.write("</td><td>");
+            document.write(nombre);
+            document.write("</td><td>");
+            document.write(referencia);
+            document.write("</td><td>");
+            document.write(precio);
+            document.write("</td><td>");
+            document.write(unidades);
+            document.write("</td></tr>");
+        }
+        document.write("</table>");
+
+    </script>
+
+    <h1 class="h1 text-center">Factura 2022 4º Trimestre</h1>
+    <script>
+        if (window.XMLHttpRequest)
+        {
+            xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET","fase1.xml",false);
+        xmlhttp.send();
+        xmlDoc=xmlhttp.responseXML;
+        document.write("<table class='table table-responsive table-dark align-middle' border='10'>");
+        var notes=xmlDoc.getElementsByTagName("cliente");
+
+        
+        document.write("<tr><th>Nombre</th><th>Apellidos</th><th>TLF</th><th>Calle</th><th>Ciudad</th><th>CP</th><th>Provincia</th><th>Correo Electrónico</th><th>Fecha inclusión</th><th>ID Pedido</th><th>Fecha de compra</th><th>Fecha de entrega</th><th>Total de la factura</th><th>Nombre producto</th><th>Referencia</th><th>Precio</th><th>Unidades</th></tr>");
+
+        for(i=70; i<80;i++){
+            nombre=notes[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue
+            apellidos=notes[i].getElementsByTagName("apellidos")[0].childNodes[0].nodeValue
+            tlf=notes[i].getElementsByTagName("tlf")[0].childNodes[0].nodeValue
+            calle=notes[i].getElementsByTagName("calle")[0].childNodes[0].nodeValue
+            ciudad=notes[i].getElementsByTagName("ciudad")[0].childNodes[0].nodeValue
+            cp=notes[i].getElementsByTagName("cp")[0].childNodes[0].nodeValue
+            provincia=notes[i].getElementsByTagName("provincia")[0].childNodes[0].nodeValue
+            correo=notes[i].getElementsByTagName("correo")[0].childNodes[0].nodeValue
+            fechaInclusion=notes[i].getElementsByTagName("fecha_inclusion")[0].childNodes[0].nodeValue
+            idPedido=notes[i].getElementsByTagName("id_pedido")[0].childNodes[0].nodeValue
+            fechaCompra=notes[i].getElementsByTagName("fecha_compra")[0].childNodes[0].nodeValue
+            fechaEntrega=notes[i].getElementsByTagName("fecha_entrega")[0].childNodes[0].nodeValue
+            totalFactura=notes[i].getElementsByTagName("total_factura")[0].childNodes[0].nodeValue
+            nombre=notes[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue
+            referencia=notes[i].getElementsByTagName("referencia")[0].childNodes[0].nodeValue
+            precio=notes[i].getElementsByTagName("precio")[0].childNodes[0].nodeValue
+            unidades=notes[i].getElementsByTagName("unidades")[0].childNodes[0].nodeValue
+
+
+            document.write("<tr><td>");
+            document.write(nombre);
+            document.write("</td><td>");
+            document.write(apellidos);
+            document.write("</td><td>");
+            document.write(tlf);
+            document.write("</td><td>");
+            document.write(calle);
+            document.write("</td><td>");
+            document.write(ciudad);
+            document.write("</td><td>");
+            document.write(cp);
+            document.write("</td><td>");
+            document.write(provincia);
+            document.write("</td><td>");
+            document.write(correo);
+            document.write("</td><td>");
+            document.write(fechaInclusion);
+            document.write("</td><td>");
+            document.write(idPedido);
+            document.write("</td><td>");
+            document.write(fechaCompra);
+            document.write("</td><td>");
+            document.write(fechaEntrega);
+            document.write("</td><td>");
+            document.write(totalFactura);
+            document.write("</td><td>");
+            document.write(nombre);
+            document.write("</td><td>");
+            document.write(referencia);
+            document.write("</td><td>");
+            document.write(precio);
+            document.write("</td><td>");
+            document.write(unidades);
+            document.write("</td></tr>");
+        }
+        document.write("</table>");
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
